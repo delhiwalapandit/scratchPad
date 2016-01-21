@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+
+  body
+  h1 Add details of a new mental health resource to be added to the database
+  div
+    form(name="new-car" method="POST" action="/addResource")
+      p
+        label(for="area") Area
+        input(type="text" name="area")
+      p
+        label(for="subject") Subject
+      p (Such as Sucide Prevention, Carers, Abuse, Sexual Health, Addictions ect)
+      input(type="number" name="subject")
+      p
+        label(for="orgName") Organisation Name
+        input(type="number" name="orgName")
+      p
+        label(for="phone") Phone Number
+        input(type="number" name="phone")
+      p
+        label(for="describtion") Organisation Describtion
+        input(type="number" name="describtion")
+      p
+        label(for="website") Website
+        input(type="number" name="website")
+      p
+        input(type="submit" value="Add Resource")
+
+          

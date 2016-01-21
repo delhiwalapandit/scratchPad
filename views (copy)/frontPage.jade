@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    
+
+
+  body
+  a(href='/addResource') add a resource
+  h2.sub-header ANIBody Resouces 
+              .table-responsive
+                table.table.table-striped
+                  thead
+                    tr
+                      th Your Local Area                    
+                  tbody
+                    tr
+                        td
+                          a(href='/user') Belfast Area                
+                    tr
+                        td
+                          a(href='/user') South Eastern Area
+                      
+        

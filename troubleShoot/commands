@@ -1,0 +1,3 @@
+
+//npm WARN This failure might be due to the use of legacy binary "node"
+//sudo apt-get install nodejs-legacy

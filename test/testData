@@ -1,0 +1,30 @@
+db.mhdb.insert({
+		"area": "Belfast",
+		"subject": "Cause",
+		"orgName": "Carers",
+		"phone": "08456030291",
+		"describtion": "provides peer-led emotional and practical support to careres and familes of people with mental illness",
+		"website": "www.cause.org.uk"
+	}
+	)
+
+db.mhdb.insert(
+{
+	"area": "Belfast",
+	"subject": "Carers",
+	"orgName": "Carers NI",
+	"phone": "02890439843",
+	"describtion": "Government support for Carers",
+	"website": "N/A"
+})
+
+db.mhdb.insert(
+{
+	"area": "Belfast",
+	"subject": "Suicide Prevention",
+	"orgName": "Life Line",
+	"phone": "08088088000",
+	"describtion": "24 hours support for those in distress or",
+	"website": "N/A"
+})
+
