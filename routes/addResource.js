@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 
-router.get('/addResource', function(req, res, next) {
-  res.render('frontPage');
+router.get('/', function(req, res, next) {
+  res.render('addResource');
 
 });
 

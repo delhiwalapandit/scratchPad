@@ -10,18 +10,18 @@ var db = require('../config/db_connection');
 
 
 // });
-// router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
 
-//  db.get('mhdb').find({}, function (err, org) {
-//  	console.log(org);
-//     res.render('index', { org: org });
-//   });
-// });
+ db.get('mhdb').find({}, function (err, org) {
+ 	console.log(org);
+    res.render('index', { org: org });
+  });
+});
 
-// router.post('/', function(req, res, next){
+router.post('/', function(req, res, next){
 
-// 	res.render('addResouce');
-// })
+	res.render('addResouce');
+})
 
 router.get('/', function(req, res, next){
 

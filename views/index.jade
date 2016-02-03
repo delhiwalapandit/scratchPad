@@ -1,43 +1,44 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
-    script(src='/bootstrap/js/bootstrap.min.js')
-    link(rel='stylesheet', href='/bootstrap/css/dashboard.css')
-    
+head
+title= title
+link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+link(rel='stylesheet', href='/stylesheets/style.css')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+script(src='/bootstrap/js/bootstrap.min.js')
+link(rel='stylesheet', href='/bootstrap/css/dashboard.css')
 
 
-  body
-  .container-fluid
-      div(id="nav")
-        .navbar-header      
-          a.navbar-brand(href='#') ANIBody    
-    
-        .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
-      h1.page-header Dashboard
-              .row.placeholders
-                .col-xs-6.col-sm-3.placeholder
-                 
-            div(id="table")
-              h2.sub-header Belfast Resources
-              .table-responsive
-                table.table.table-striped
-                  thead
-                    tr
-                      th Name
-                      th Subject
-                      th Phone
-                      th Describtion
-                      th Website                  
-                  tbody
-                  for loop in org
-                    tr
-                      td #{loop.orgName}
-                      td #{loop.subject} 
-                      td #{loop.phone} 
-                      td #{loop.describtion} 
-                      td #{loop.website}   
+
+body
+.container-fluid
+  div(id="nav")
+    .navbar-header
+      a.navbar-brand(href='#') ANIBody
+
+    .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+  h1.page-header Dashboard
+          .row.placeholders
+            .col-xs-6.col-sm-3.placeholder
+
+        div(id="table")
+          h2.sub-header Belfast Resources
+          .table-responsive
+            table.table.table-striped
+              thead
+                tr
+                  th Name
+                  th Subject
+                  th Phone
+                  th Describtion
+                  th Website
+              tbody
+              for loop in org
+                tr
+                  td #{loop.orgName}
+                  td #{loop.subject}
+                  td #{loop.phone}
+                  td #{loop.describtion}
+                  td
+                    a(href='/') #{loop.website}
