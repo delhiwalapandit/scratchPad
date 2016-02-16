@@ -1,0 +1,28 @@
+doctype html
+html
+head
+title= title
+link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+link(rel='stylesheet', href='/stylesheets/style.css')
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+script(src='/bootstrap/js/bootstrap.min.js')
+script(src='/bootstrap/js/toggle.js')
+link(rel='stylesheet', href='/bootstrap/css/dashboard.css')
+
+
+
+body
+
+
+div(id="table2")
+  h2.sub-header 2nd Resources
+  .table-responsive
+    table.table.table-striped
+      thead
+        tr
+          th Name
+      tbody
+        tr
+            td
+                -block var

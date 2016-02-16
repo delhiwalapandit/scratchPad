@@ -7,6 +7,7 @@ link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
 link(rel='stylesheet', href='/stylesheets/style.css')
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
 script(src='/bootstrap/js/bootstrap.min.js')
+script(src='/bootstrap/js/toggle.js')
 link(rel='stylesheet', href='/bootstrap/css/dashboard.css')
 
 
@@ -34,11 +35,14 @@ body
                   th Describtion
                   th Website
               tbody
-              for loop in org
-                tr
-                  td #{loop.orgName}
-                  td #{loop.subject}
-                  td #{loop.phone}
-                  td #{loop.describtion}
-                  td
-                    a(href='/') #{loop.website}
+                for loop in org
+                  tr
+                    td #{loop.orgName}
+                    td #{loop.subject}
+                    td #{loop.phone}
+                    td #{loop.describtion}
+                    td
+                      a(href='/' id="display") #{loop.website}
+
+
+

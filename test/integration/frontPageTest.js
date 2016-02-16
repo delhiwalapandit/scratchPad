@@ -29,10 +29,10 @@ describe('mhealth front page', function () {
     it('routes correctly', function (done) {
       request(app).get('/')
         .expect(200, done)
-    }); 
-  
+    });
 
-    it('gets stuff from db', function(){
+
+    xit('gets stuff from db', function(){
       request(app).get('/')
       .end(function (req, res) {
         mHeathResources.find({}, function (err, students){

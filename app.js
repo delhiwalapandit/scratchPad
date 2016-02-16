@@ -6,9 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 
-var routes = require('./routes/indexs');
-var users = require('./routes/users');
-var dashboard = require('./routes/dashboard');
+var routes = require('./routes/frontPage');
+var listResources = require('./routes/listResources');
+// var dashboard = require('./routes/dashboard');
 var addResource = require('./routes/addResource');
 
 var app = express();
@@ -26,8 +26,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/dashboard', dashboard);
+app.use('/listResources', listResources);
+// app.use('/dashboard', dashboard);
 app.use('/addResource', addResource);
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 // app.use('/bower_components',  express.static('/bower_components'));
